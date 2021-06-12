@@ -10,9 +10,10 @@
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
+        "plugin:lookbehind-assertions/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
-      "plugins": ["lookbehind-assertions"],
+      // "plugins": ["lookbehind-assertions"],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -29,8 +30,8 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ],
-        "lookbehind-assertions/no-lookbehind-assertions-regexp": "error"
+        ]
+        // "lookbehind-assertions/no-lookbehind-assertions-regexp": "error"
       }
     },
     {
