@@ -36,8 +36,10 @@
     },
     {
       "files": ["*.html"],
+      "parser": "@angular-eslint/template-parser",
+      "plugins": ["ionic-tappable"],
       "extends": ["plugin:@angular-eslint/template/recommended"],
-      "rules": {}
+      "rules": { "ionic-tappable/click-events-have-tappable": "warn" }
     }
   ]
 }
