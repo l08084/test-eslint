@@ -13,7 +13,7 @@
         "plugin:lookbehind-assertions/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
-      // "plugins": ["lookbehind-assertions"],
+      "plugins": ["angular-file-naming"],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -30,8 +30,13 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
         // "lookbehind-assertions/no-lookbehind-assertions-regexp": "error"
+        "angular-file-naming/component-filename-suffix": "error",
+        "angular-file-naming/directive-filename-suffix": "error",
+        "angular-file-naming/module-filename-suffix": "error",
+        "angular-file-naming/pipe-filename-suffix": "error",
+        "angular-file-naming/service-filename-suffix": "error"
       }
     },
     {
